@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+httpx
+openai
+python-dotenv
+beautifulsoup4
+google-search-results
+better-profanity

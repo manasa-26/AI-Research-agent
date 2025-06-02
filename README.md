@@ -1,63 +1,74 @@
-🧠 Project Overview
-This is an AI-powered research assistant that takes user queries, fetches relevant web data, and generates concise, source-cited answers using a language model. The system consists of a fast, modern frontend built with Vite + React.js and a backend powered by FastAPI, OpenAI, and SerpAPI.
+# 🧠 AI-Powered Research Assistant
 
-🔙 Backend – FastAPI, OpenAI, SerpAPI
-The backend is designed as a modular, high-performance service that performs the following:
+An AI-powered research assistant that takes user queries, fetches real-time web data, and generates concise, source-cited answers using a language model.
 
-Query Intake: Accepts natural language input from the frontend.
+Built with a modern frontend (Vite + React.js) and a modular backend (FastAPI, OpenAI, SerpAPI), this assistant helps users get accurate answers with references—fast.
 
-Web Search Integration: Uses SerpAPI to collect real-time search results related to the query.
+---
 
-Information Extraction: Processes and filters relevant snippets from the search data.
+## 🔙 Backend – FastAPI, OpenAI, SerpAPI
 
-LLM Summarization: Interacts with OpenAI's GPT models to produce a clear, well-structured answer with citations.
+The backend is a modular, high-performance service built with FastAPI. It handles:
 
-Citation Handling: Formats the LLM's output with inline numbered citations and maps them to corresponding URLs.
+- **📝 Query Intake**: Accepts natural language input from the frontend.
+- **🌐 Web Search Integration**: Uses SerpAPI to gather relevant real-time web data.
+- **📑 Information Extraction**: Filters and selects the most relevant snippets.
+- **🧠 LLM Summarization**: Utilizes OpenAI's GPT models to produce a well-structured answer.
+- **🔗 Citation Handling**: Formats output with inline numbered citations, mapped to actual URLs.
 
-💻 Frontend – Vite + React.js (HTML/CSS)
-The frontend is a lightweight, responsive single-page application built with Vite and React.js, styled using HTML and CSS. Key features include:
+**Technologies:**
+- FastAPI
+- OpenAI GPT
+- SerpAPI
+- Python, Pydantic
+- Uvicorn (async server)
 
-Intuitive Input Field: Users can enter research questions naturally.
+---
 
-Asynchronous Communication: Interacts with the backend and dynamically updates the UI.
+## 💻 Frontend – Vite + React.js
 
-Answer Display with Citations: Shows clearly formatted responses with inline citation numbers and external links.
+A clean and responsive single-page application built for speed and simplicity.
 
-Minimalist, Clean UI: Optimized for clarity, accessibility, and ease of use.
+### Features:
+- **🔎 Intuitive Input Field**: Users can enter research questions naturally.
+- **⚡ Asynchronous Communication**: Smooth interaction with backend API.
+- **📘 Answer Display with Citations**: Clearly formatted answers with numbered inline citations and clickable links.
+- **🧼 Minimalist UI**: Optimized for clarity, accessibility, and ease of use.
 
-🛠️ Technologies Used
-Backend:
-FastAPI – High-performance Python web framework.
+**Technologies:**
+- Vite
+- React.js
+- HTML5 & CSS3
+- Axios / Fetch API
 
-OpenAI GPT – For generating concise, citation-backed answers.
+---
 
-SerpAPI – For real-time web search data.
+## 🖼️ Screenshots
 
-Python, Pydantic, Uvicorn – For API logic and async runtime.
-
-Frontend:
-Vite – Lightning-fast development and build tool.
-
-React.js – Component-based UI library.
-
-HTML5 & CSS3 – For markup and custom styling.
-
-Axios / Fetch API – For communicating with the backend.
-
-🖼️ Frontend Screenshot
-
+### Input Interface
 ![Screenshot 2025-06-01 203553](https://github.com/user-attachments/assets/7f6914f3-e6dc-4f16-b70a-21ad98b1d5e3)
 
-Output
+### Output Example
 ![Screenshot 2025-06-01 204534](https://github.com/user-attachments/assets/40d6f3b2-6f73-444b-beae-afdcca064009)
 ![Screenshot 2025-06-01 220948](https://github.com/user-attachments/assets/76ab7757-1f07-4086-8cc0-d270ce8cac18)
 
+---
 
+## 🎥 Video Demo
 
-🎥 Video Demo
-Watch the demo video here
+Watch the demo here:
 
-https://drive.google.com/file/d/1SNKNRQmKyNphuBZTw70F7mKCgAAtwsiH/view?usp=sharing
-https://drive.google.com/file/d/1hXMO7Hc5JdYKXMUvLRSb-l5gMKikjV5i/view?usp=sharing  
+- [Demo Video 1](https://drive.google.com/file/d/1SNKNRQmKyNphuBZTw70F7mKCgAAtwsiH/view?usp=sharing)
+- [Demo Video 2](https://drive.google.com/file/d/1hXMO7Hc5JdYKXMUvLRSb-l5gMKikjV5i/view?usp=sharing)
 
+---
 
+## 🛠️ How It Works
+
+1. User submits a research query via the frontend.
+2. The backend sends the query to SerpAPI for web results.
+3. Relevant snippets are extracted and cleaned.
+4. OpenAI GPT generates a summary with numbered citations.
+5. Response with citations is sent back and rendered in the UI.
+
+---
